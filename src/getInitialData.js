@@ -3,7 +3,7 @@ const getStaffData = url => {
   .then(res => res.json())
 }
 
-export const getInitialData = url => {
+const getInitialData = url => {
   return fetch(url)
   .then(res => res.json())
   .then(data => data.bio)
@@ -21,3 +21,5 @@ export const getInitialData = url => {
     })
   })
 }
+
+export default getInitialData

@@ -1,4 +1,4 @@
-const staffData = {
+export const staffData = {
   bio: [
     {
       name: "Romeeka Gayhart",
@@ -41,9 +41,7 @@ const staffInfo = [
 // }
 
 export const getInitialData = url => {
-  return new Promise((res, rej) => 
-    process.nextTick(() => res(staffInfo))
-  })
+  return new Promise(res => res(staffInfo))
 }
 
 
